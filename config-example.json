@@ -1,0 +1,7 @@
+{
+  "baseUrl": "https://myschool.compass.education",
+  "credentials": {
+    "username": "myusername",
+    "password": "mypassword"
+  }
+}

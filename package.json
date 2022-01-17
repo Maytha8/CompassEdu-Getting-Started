@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "A starting project that uses the CompassEdu node package.",
   "main": "index.js",
+  "engines": {
+    "node": ">=14"
+  },
   "scripts": {
+    "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +25,9 @@
   "bugs": {
     "url": "https://github.com/Maytha8/CompassEdu-Getting-Started/issues"
   },
-  "homepage": "https://github.com/Maytha8/CompassEdu-Getting-Started#readme"
+  "homepage": "https://github.com/Maytha8/CompassEdu-Getting-Started#readme",
+  "dependencies": {
+    "@maytha8/compassedu": "^0.1.1",
+    "express": "^4.17.2"
+  }
 }
