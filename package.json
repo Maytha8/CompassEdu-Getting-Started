@@ -1,0 +1,25 @@
+{
+  "name": "compassedu-getting-started",
+  "version": "1.0.0",
+  "description": "A starting project that uses the CompassEdu node package.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maytha8/CompassEdu-Getting-Started.git"
+  },
+  "keywords": [
+    "getting-started",
+    "tutorial",
+    "demo",
+    "nodejs"
+  ],
+  "author": "Maytham Alsudany <44939173+Maytha8@users.noreply.github.com> (https://github.com/Maytha8)",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/Maytha8/CompassEdu-Getting-Started/issues"
+  },
+  "homepage": "https://github.com/Maytha8/CompassEdu-Getting-Started#readme"
+}
