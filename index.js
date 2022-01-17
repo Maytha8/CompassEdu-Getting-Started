@@ -6,7 +6,7 @@ const express = require('express');
 const server = new express();
 
 // Initiate CompassEdu instance
-const compassedu = require('../compassedu');
+const compassedu = require('@maytha8/compassedu');
 const app = new compassedu(config.baseUrl);
 
 (async ()=>{
