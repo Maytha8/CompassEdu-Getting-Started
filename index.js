@@ -1,5 +1,10 @@
 // Get configuration options
-const config = require('./config.json');
+try {
+  const config = require('./config.json');
+} catch (e) {
+  console.log('An error occurred requiring the config.json file.\nMake sure that it is there and that it is in valid JSON format.\n\nBelow is the original error.');
+  throw e;
+}
 
 // Start server
 const express = require('express');
@@ -13,13 +18,13 @@ const app = new compassedu(config.baseUrl);
 
   // Authenticate
   try {
-    await app.authenticate(config.credentials.username, config.credentials.password);
+    await app.auth.authenticate(config.credentials.username, config.credentials.password);
     console.log('Authenticated');
   } catch (e) {
     if (e.message === "Invalid credentials") {
-      throw new Error('The username and/or password provided are incorrect.');
+      throw new Error('The username and/or password provided in config.json are incorrect.\nPlease make sure you typed in the credentials correctly.');
     } else {
-      throw new Error(e.message);
+      throw e;
     }
   }
 
